@@ -49,5 +49,9 @@ A custom Grub theme to personalize your bootloader screen. This repository conta
     sudo reboot
     ```
 
+## Preview
+![Grub Theme Preview](https://github.com/Datta-Lohith/Grub-Theme/blob/main/grub_bg.png)
+
+
 ## Uninstallation
 To revert to your default Grub theme, open `/etc/default/grub` and remove or comment out the `GRUB_THEME` line. Then, update Grub and reboot your system.
