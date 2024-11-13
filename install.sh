@@ -35,7 +35,8 @@ sudo rsync -av --exclude='install.sh' --exclude='.git' --exclude='README.md' /tm
 
 # Step 4: Update the Grub configuration to use the new theme
 echo -e "${YELLOW}Updating Grub configuration to use the new theme...${NC}"
-sudo sed -i 's|^GRUB_THEME=.*|GRUB_THEME="'"$THEME_DIR"'/theme.txt"|' /etc/default/grub
+sudo grep -q '^GRUB_THEME=' /etc/default/grub || echo 'GRUB_THEME="$THEME_DIR"' | sudo tee -a /etc/default/grub > /dev/null
+
 sudo update-grub
 
 # Step 5: Clean up temporary files
