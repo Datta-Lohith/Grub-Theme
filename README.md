@@ -55,3 +55,6 @@ A custom Grub theme to personalize your bootloader screen. This repository conta
 
 ## Uninstallation
 To revert to your default Grub theme, open `/etc/default/grub` and remove or comment out the `GRUB_THEME` line. Then, update Grub and reboot your system.
+
+![Project Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Datta-Lohith/Grub-Theme&title=People%20Used)
+
